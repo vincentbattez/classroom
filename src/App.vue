@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <Homepage />
+    <Navbar />
+    <router-view :key="$route.fullPath"/>
   </div>
 </template>
 
 <script>
-import Homepage from '@/pages/Homepage.vue'
+import Navbar from '@/components/Navbar.vue'
 export default {
-  components: { Homepage }
+  components: { Navbar }
 }
 </script>

@@ -8,14 +8,13 @@
 export default {
   props: {
     className: {
-      type: String
+      type: String,
+      required: true
     },
     group: {
-      type: Number
+      type: [Number, String],
+      required: true
     }
   }
 }
 </script>
-
-<style scoped>
-</style>
